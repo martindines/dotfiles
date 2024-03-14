@@ -1,0 +1,47 @@
+[user]
+  name = Martin Dines
+  email = martin.dines@live.co.uk
+
+[push]
+  default = simple
+  autoSetupRemote = true
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+
+[mergetool]
+  prompt = false
+  keepBackup = false
+
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3
+
+[commit]
+  gpgsign = false
+
+[credential]
+  helper = cache
+
+[http]
+  cookiefile = ~/.gitcookies
+
+[core]
+  excludesfile = ~/.gitignore
+  editor = nvim
+
+[rebase]
+  autosquash = true
+
+[hub]
+  host = github.com
+
+[rerere]
+  enabled = true
+
+[pretty]
+  # Extended one line.
+  xol = "format: %ai %<(20) %Cblue%an %Cgreen%h %Creset %s"
+
+[pack]
+  useSparse = true

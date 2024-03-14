@@ -1,0 +1,1 @@
+alias sudo='sudo -h 127.0.0.1'

@@ -17,11 +17,3 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Change default shell to fish.
 sudo chsh -s $(which fish) $USER
 
-# Log out and log in again to load in to fish
-sudo su - $USER
-
-# Add cargo bin dir to PATH
-fish fish_add_path $HOME/.cargo/bin
-
-# Install cargo packages
-./cargo_install

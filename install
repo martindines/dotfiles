@@ -21,7 +21,7 @@ sudo chsh -s $(which fish) $USER
 sudo su - $USER
 
 # Add cargo bin dir to PATH
-fish_add_path $HOME/.cargo/bin
+fish fish_add_path $HOME/.cargo/bin
 
 # Install cargo packages
 ./cargo_install

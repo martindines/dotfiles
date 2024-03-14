@@ -6,6 +6,9 @@ fi
 
 set -e
 
+# Add cargo bin dir to PATH
+fish_add_path $HOME/.cargo/bin
+
 stow -t ~/.config/ .config/
 stow git
 stow bash
@@ -17,4 +20,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Change default shell to fish.
 sudo chsh -s $(which fish) $USER
 
+# Install cargo packages
 ./cargo_install

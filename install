@@ -1,12 +1,12 @@
 #!/bin/bash
 if $(which apt >/dev/null); then
   sudo apt update
-  sudo apt install -y neovim fish autojump dstat pg-activity stow cargo asciinema ncdu
+  sudo apt install -y neovim zsh autojump dstat pg-activity stow cargo asciinema ncdu
 fi
 
 set -e
 
-stow -t ~/.config/ .config/
+stow -t ~/ zsh
 #stow -t ~/ git
 stow -t ~/ bash
 
@@ -14,6 +14,6 @@ stow -t ~/ bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-# Change default shell to fish.
-sudo chsh -s $(which fish) $USER
+# Change default shell to zsh
+sudo chsh -s $(which zsh) $USER
 

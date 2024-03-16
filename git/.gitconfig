@@ -1,6 +1,7 @@
 [user]
   name = Martin Dines
   email = martin.dines@live.co.uk
+  signingkey = F9922FB7E1975014
 
 [push]
   default = simple

@@ -7,7 +7,7 @@ fi
 set -e
 
 stow -t ~/ zsh
-#stow -t ~/ git
+stow -t ~/ git
 stow -t ~/ bash
 
 # Install vim-plug

@@ -6,9 +6,6 @@
   default = simple
   autoSetupRemote = true
 
-[url "git@github.com:"]
-  insteadOf = https://github.com/
-
 [mergetool]
   prompt = false
   keepBackup = false
